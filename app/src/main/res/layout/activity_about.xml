@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity"
+    android:background="@color/back">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/log" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Contact Dev"
+        android:fontFamily="@font/raleway_bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logotext"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Contact us to Add a Store"
+        android:textColor="#BC021EA3"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/github"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/github"
+            android:layout_margin="10dp"
+            app:imageView_scale="0.7"
+            app:imageView_duration="300" />
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/gmail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gmail"
+            android:layout_margin="10dp"
+            app:imageView_scale="0.7"
+            app:imageView_duration="300" />
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/facebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/facebook"
+            android:layout_margin="10dp"
+            app:imageView_scale="0.7"
+            app:imageView_duration="300" />
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/whatsapp"
+            android:layout_margin="10dp"
+            app:imageView_scale="0.7"
+            app:imageView_duration="300" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/about_banner_id"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
